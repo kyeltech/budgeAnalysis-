@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet"> 
+<link href="style.css" rel="stylesheet"  >
+<link rel="stylesheet" href="./icons.css" >
+</head>
+<body>
+<div class="container">
+<div class="row">
+<h3 class="uppercase">Budget analysis</h3>
+<div class="new-row">
+<div class="col">
+<div class="budget-feedback alert alert-danger text-capitalize"> budget feedback</div>
+<!-- budget form -->
+<form class="budget-form" id="budget-form">
+<h5 class="text-capitalize">please Enter your budget</h5>
+<div class="form-group">
+<input type="number" class="form-control budget-input" id="budget-input" placeholder="input your budget">
+</div>
+<!-- submit button -->
+<button id="budget-submit" type="submit" class="btn text-capitalize budget-submit">Calculate</button>
+</form>
+</div>
+<div class="col-one">
+<!-- appp info -->
+<div class="row-one">
+<div class="col-two text-center">
+<h6 class="text-uppercase info-title">budget</h6>
+<span class="budget-icon"><i class="fas fa-money-bill-alt"></i></span>
+<h4 class="text-uppercase budget" id="budget"><span>$</span><span id="budget-amount">0</span></h4>
+</div>
+<div class="col-two text-center">
+<h6 class="text-uppercase info-title">Expense</h6>
+<span class="expense-icon"><i class="fas fa-card-bill-alt"></i></span>
+<h4 class="text-uppercase expense" id="expense"><span>$<span id="expense-amount">0</span></h4>
+</div>
+<div class="col-two text-center">
+<h6 class="text-uppercase info-title">balance</h6>
+<span class="balance-icon" id="balance"><i class="fas fa-card-bill-alt"></i></span>
+<h4 class="text-uppercase balance" id="balance"><span id="balance-amount">$<span>0</span></h4>
+</div>
+</div>
+<div class="row">
+<div class="col">
+<!-- expense feedback -->
+<div class="expense-feedback alert alert-danger text-capitalize">expense feedback</div>
+<!-- expense form -->
+<form id="expense-form" class=" expense-form">
+<h5 class="text-capitalize">please enter your expense</h5>
+<div class="form-group">
+<input type="text" class="form-control expense-input" id="expense-input" placeholder="enter expense content">
+</div>
+<h5 class="text-capitalize">please enter expense amount</h5>
+<div class="form-group">
+<input type="number" class="form-control expense-input" id="amount-input" placeholder="enter expense amount">
+</div>
+<!-- submit button -->
+<button type="submit" class="btn text-capitalize expense-submit" id="expense-submit">add expense</button>
+</form>
+</div>
+<div class="col-md-7 my-3">
+<!-- expense list -->
+<div class="expense-list" id="expense-list">
+
+<div class="expense-list" id="expense-list">
+
+<div class="expense-list__info d-flex justify-content-between text-capitalize">
+<h5 class="list-item">expense title</h5>
+<h5 class="list-item">expense value</h5>
+<h5 class="list-item"></h5>
+</div>
+
+<!-- singele expense -->
+
+<!-- <div class="expense">
+<div class="expense-item justify-content-between align-items-baseline">
+<h6 class="expense-title list-item text-uppercase">title</h6>
+<h5 class="expense-amount list-item">amount</h5>
+
+<div class="expense-icons list-item">
+<a href="#" class="edit-icon" data-id="${expense.id}">
+<i class="fas fa-edit></i>
+</a>
+<a href="#" class="delete-icon" data-id="${expense.id}">
+<i class="fas fa-delete></i>
+</a>
+</div>
+</div> -->
+</div>
+
+</div>
+
+</div>
+<script src="file.js"></script>
+</body>
+</html>
